@@ -80,6 +80,21 @@
 }
 
 /*---------------
+    TYPO
+---------------*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+p {
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+/*---------------
     COMMON
 ---------------*/
 .container, .container-small {
@@ -96,8 +111,38 @@
 }
 
 /*---------------
+    BUTTONS
+---------------*/
+.btn {
+    display: inline-block;
+    border-radius: 40px;
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+.btn-primary {
+    background-color: #fff;
+    color: #000;
+}
+.btn-secondary {
+    background-color: #000;
+    color: #fff;
+}
+.btn-small {
+    font-size: 13px;
+}
+.btn-big {
+    padding: 14px 20px;
+}
+
+/*---------------
     HEADER
 ---------------*/
+header {
+    background-color: #255ee9;
+    color: #fff;
+}
 .header-top {
     padding: 16px 0;
 }
@@ -117,7 +162,7 @@
     justify-content: center;
 }
 .main-nav ul li {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 .main-nav ul li a {
     text-decoration: none;
@@ -128,7 +173,18 @@
 }
 
 .hero {
-    padding: 50px 0;
+    padding: 140px 0;
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* min-height: 500px; */
+}
+.hero-buttons {
+    margin-top: 18px;
+}
+.hero-buttons .btn {
+    margin: 0 10px;
 }
 /*---------------
     MAIN
