@@ -89,6 +89,10 @@ h1, h2 {
     font-size: 45px;
     margin-bottom: 30px;
 }
+h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
 p {
     line-height: 1.7;
     font-size: 18px;
@@ -109,6 +113,28 @@ p {
 .row {
     display: flex;
 }
+.image-fluid {
+    max-width: 100%;
+}
+.starts {
+    background-image: url('../img/stars.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 35px;
+}
+.wave-top::before, .wave-bottom::after {
+    content: '';
+    display: block;
+    height: 150px;
+    background-image: url('../img/wave.svg');
+}
+.wave-bottom::after {
+    transform: rotateX(180deg);
+}
+
+.bg-gray {
+    background-color: #F6F6F6;
+}
 
 /*---------------
     BUTTONS
@@ -127,6 +153,10 @@ p {
 }
 .btn-secondary {
     background-color: #000;
+    color: #fff;
+}
+.btn-tertiary {
+    background-color: #7289da;
     color: #fff;
 }
 .btn-small {
@@ -192,15 +222,26 @@ header {
 section {
     padding: 40px 0;
 }
-section:nth-child(2n) {
-    background-color: #d3d3d3;
+/* main *:nth-child(2n) section {
+    background-color: #f6f6f6;
+} */
+section:last-child {
+    text-align: center;
 }
+/* section:nth-child(2n) .col-small {
+    order: -1;
+} */
+
+/* section:nth-child(2n):not(:last-child) .row {
+    flex-direction: row-reverse;
+} */
 
 .col-big {
     width: 60%;
 }
 .col-small {
     width: 40%;
+    padding: 30px 0;
 }
 
 /*---------------
